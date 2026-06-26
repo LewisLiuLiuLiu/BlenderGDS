@@ -55,7 +55,6 @@
       "description": "A Blender material property value.",
       "oneOf": [
         {"type": "number"},
-        {"type": "boolean"},
         {"type": "string"},
         {
           "type": "array",
