@@ -193,21 +193,10 @@ def create_material(name, color):
     node_output.location = (400.0, 0.0)
 
     # Set color and properties
-    input_map = {
-        "color": ["Base Color", [1.0, 1.0, 1.0, 1.0]],
-        "metallic": ["Metallic", 0.1],
-        "roughness": ["Roughness", 0.5],
-    }
     for key,value in color.items():
-        if key in input_map:
-            node_bsdf.inputs[input_map[key][0]].default_value = input_map[key][1] if value is None else value
-            
-            if key=="color" and 'Alpha' in node_bsdf.inputs:
-                node_bsdf.inputs['Alpha'].default_value = color.get('color', [1.0, 1.0, 1.0, 1.0])[-1]
-        else:
-            # Try using Blender's input names
-            if key in node_bsdf.inputs:
-                node_bsdf.inputs[key].default_value = value
+        # Try using Blender's input names
+        if key in node_bsdf.inputs:
+            node_bsdf.inputs[key].default_value = value
 
     # Link nodes
     mat.node_tree.links.new(node_bsdf.outputs['BSDF'], node_output.inputs['Surface'])
