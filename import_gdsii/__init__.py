@@ -197,6 +197,11 @@ def create_material(name, color):
         # Try using Blender's input names
         if key in node_bsdf.inputs:
             node_bsdf.inputs[key].default_value = value
+        elif key == "Subsurface Type":
+            # Handle exceptional property
+            node_bsdf.subsurface_method = value
+        else:
+            print(f"Unknown input name: {key}")
 
     # Link nodes
     mat.node_tree.links.new(node_bsdf.outputs['BSDF'], node_output.inputs['Surface'])
