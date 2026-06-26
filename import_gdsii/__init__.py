@@ -190,7 +190,7 @@ def create_material(name, color):
     # Create nodes
     node_bsdf = nodes.new(type='ShaderNodeBsdfPrincipled')
     node_output = nodes.new(type='ShaderNodeOutputMaterial')
-    node_output.location = [400.0, 0.0]
+    node_output.location = (400.0, 0.0)
 
     # Set color and properties
     node_bsdf.inputs['Base Color'].default_value = color.get('color', [1.0, 1.0, 1.0, 1.0])
