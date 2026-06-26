@@ -13,42 +13,62 @@
       "type": "string",
       "description": "Description of the color scheme"
     },
-    "layers": {
+    "materials": {
       "type": "object",
-      "description": "Layer definitions with colors",
+      "description": "Named Blender material definitions",
       "patternProperties": {
         "^[A-Za-z0-9_]+$": {
-          "type": "object",
-          "required": ["color"],
-          "properties": {
-            "color": {
-              "type": "array",
-              "description": "RGBA color values (red, green, blue, alpha) ranging from 0.0 to 1.0",
-              "minItems": 4,
-              "maxItems": 4,
-              "items": {
-                "type": "number",
-                "minimum": 0.0,
-                "maximum": 1.0
-              }
-            },
-            "metallic": {
-              "type": "number",
-              "description": "Metallic property for PBR rendering (0.0 = non-metallic, 1.0 = fully metallic)",
-              "minimum": 0.0,
-              "maximum": 1.0
-            },
-            "roughness": {
-              "type": "number",
-              "description": "Roughness property for PBR rendering (0.0 = smooth/glossy, 1.0 = rough/matte)",
-              "minimum": 0.0,
-              "maximum": 1.0
-            }
-          },
-          "additionalProperties": false
+          "$ref": "#/definitions/material"
         }
       },
       "additionalProperties": false
+    },
+    "layers": {
+      "type": "object",
+      "description": "Layer definitions. Each layer may either reference a named material or define one inline.",
+      "patternProperties": {
+        "^[A-Za-z0-9_]+$": {
+          "oneOf": [
+            {
+              "type": "string",
+              "description": "Reference to a named material."
+            },
+            {"$ref": "#/definitions/material"}
+          ]
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "definitions": {
+    "material": {
+      "type": "object",
+      "description": "A Blender material definition consisting of arbitrary Principled BSDF inputs or material properties.",
+      "patternProperties": {
+        "^.+$": {
+          "$ref": "#/definitions/materialProperty"
+        }
+      },
+      "additionalProperties": false
+    },
+    "materialProperty": {
+      "description": "A Blender material property value.",
+      "oneOf": [
+        {"type": "number"},
+        {"type": "boolean"},
+        {"type": "string"},
+        {
+          "type": "array",
+          "description": "RGB or RGBA color.",
+          "minItems": 3,
+          "maxItems": 4,
+          "items": {
+            "type": "number",
+            "minimum": 0.0,
+            "maximum": 1.0
+          }
+        }
+      ]
     }
   },
   "additionalProperties": false
