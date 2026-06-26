@@ -199,7 +199,10 @@ def create_material(name, color):
             node_bsdf.inputs[key].default_value = value
         elif key == "Subsurface Type":
             # Handle exceptional property
-            node_bsdf.subsurface_method = value
+            try:
+                node_bsdf.subsurface_method = value
+            except:
+                print(f"Unknown Subsurface Type: {value}")
         else:
             print(f"Unknown input name: {key}")
 
