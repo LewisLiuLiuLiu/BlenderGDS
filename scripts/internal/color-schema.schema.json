@@ -43,31 +43,53 @@
   "definitions": {
     "material": {
       "type": "object",
-      "description": "A Blender material definition consisting of arbitrary Principled BSDF inputs or material properties.",
-      "patternProperties": {
-        "^.+$": {
-          "$ref": "#/definitions/materialProperty"
-        }
+      "description": "A Blender Principled BSDF material definition.",
+      "properties": {
+        "Base Color":            {"$ref": "#/definitions/rgba"},
+        "Metallic":              {"$ref": "#/definitions/value"},
+        "Roughness":             {"$ref": "#/definitions/value"},
+        "IOR":                   {"$ref": "#/definitions/value"},
+        "Alpha":                 {"$ref": "#/definitions/value"},
+        "Weight":                {"$ref": "#/definitions/value"},
+        "Diffuse Roughness":     {"$ref": "#/definitions/value"},
+        "Subsurface Type":       {"type": "string", "description": "Subsurface scattering method. E.g. 'BURLEY' or 'RANDOM_WALK'."},
+        "Subsurface Weight":     {"$ref": "#/definitions/value"},
+        "Subsurface Scale":      {"$ref": "#/definitions/value"},
+        "Subsurface IOR":        {"$ref": "#/definitions/value"},
+        "Subsurface Anisotropy": {"$ref": "#/definitions/value"},
+        "Specular IOR Level":    {"$ref": "#/definitions/value"},
+        "Specular Tint":         {"$ref": "#/definitions/rgba"},
+        "Anisotropic":           {"$ref": "#/definitions/value"},
+        "Anisotropic Rotation":  {"$ref": "#/definitions/value"},
+        "Transmission Weight":   {"$ref": "#/definitions/value"},
+        "Coat Weight":           {"$ref": "#/definitions/value"},
+        "Coat Roughness":        {"$ref": "#/definitions/value"},
+        "Coat IOR":              {"$ref": "#/definitions/value"},
+        "Coat Tint":             {"$ref": "#/definitions/rgba"},
+        "Sheen Weight":          {"$ref": "#/definitions/value"},
+        "Sheen Roughness":       {"$ref": "#/definitions/value"},
+        "Sheen Tint":            {"$ref": "#/definitions/rgba"},
+        "Emission Color":        {"$ref": "#/definitions/rgba"},
+        "Emission Strength":     {"$ref": "#/definitions/value"},
+        "Thin Film Thickness":   {"$ref": "#/definitions/value"},
+        "Thin Film IOR":         {"$ref": "#/definitions/value"}
       },
       "additionalProperties": false
     },
-    "materialProperty": {
-      "description": "A Blender material property value.",
-      "oneOf": [
-        {"type": "number"},
-        {"type": "string"},
-        {
-          "type": "array",
-          "description": "RGB or RGBA color.",
-          "minItems": 3,
-          "maxItems": 4,
-          "items": {
-            "type": "number",
-            "minimum": 0.0,
-            "maximum": 1.0
-          }
-        }
-      ]
+    "value": {
+      "type": "number",
+      "description": "A scalar numeric value."
+    },
+    "rgba": {
+      "type": "array",
+      "description": "RGB or RGBA color. Each channel in [0.0, 1.0].",
+      "minItems": 3,
+      "maxItems": 4,
+      "items": {
+        "type": "number",
+        "minimum": 0.0,
+        "maximum": 1.0
+      }
     }
   },
   "additionalProperties": false
