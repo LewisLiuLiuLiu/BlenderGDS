@@ -151,12 +151,12 @@ name: Realistic
 description: Realistic color scheme
 layers:
   Metal1:
-    Basic Color: [0.63, 0.64, 0.65, 1.0]
+    Base Color: [0.63, 0.64, 0.65, 1.0]
     Metallic: 0.8
     Roughness: 0.3
 
   NWell:
-    Basic Color: [0.30, 0.45, 0.55, 0.65]
+    Base Color: [0.30, 0.45, 0.55, 0.65]
     Alpha: 0.65
 ```
 

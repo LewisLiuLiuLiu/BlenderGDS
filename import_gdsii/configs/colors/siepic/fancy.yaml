@@ -7,78 +7,78 @@ description: Fancy color scheme - vivid flat aesthetic
 layers:
   # Silicon — pink/magenta (matches SiEPIC KLayout default)
   Si:
-    Basic Color: [1.00, 0.50, 0.66, 1.0]
+    Base Color: [1.00, 0.50, 0.66, 1.0]
     Metallic: 0.0
     Roughness: 1.0
   SiRib90:
-    Basic Color: [0.50, 0.66, 1.00, 1.0]
+    Base Color: [0.50, 0.66, 1.00, 1.0]
     Metallic: 0.0
     Roughness: 1.0
   SiLitho193:
-    Basic Color: [0.80, 0.50, 0.66, 1.0]
+    Base Color: [0.80, 0.50, 0.66, 1.0]
     Metallic: 0.0
     Roughness: 1.0
 
   # SiN — light blue
   SiN:
-    Basic Color: [0.65, 0.81, 0.89, 0.95]
+    Base Color: [0.65, 0.81, 0.89, 0.95]
     Alpha: 0.95
     Metallic: 0.0
     Roughness: 1.0
 
   # Doping — vivid violet / blue
   SiNdope:
-    Basic Color: [0.44, 0.00, 1.00, 0.95]
+    Base Color: [0.44, 0.00, 1.00, 0.95]
     Alpha: 0.95
     Metallic: 0.0
     Roughness: 1.0
   SiNppdope:
-    Basic Color: [0.10, 0.20, 1.00, 0.95]
+    Base Color: [0.10, 0.20, 1.00, 0.95]
     Alpha: 0.95
     Metallic: 0.0
     Roughness: 1.0
 
   # Oxide open — orange
   OxideOpen:
-    Basic Color: [1.00, 0.68, 0.00, 0.6]
+    Base Color: [1.00, 0.68, 0.00, 0.6]
     Alpha: 0.6
     Metallic: 0.0
     Roughness: 1.0
 
   # M1 heater — gold/yellow
   M1Heater:
-    Basic Color: [0.92, 0.78, 0.20, 1.0]
+    Base Color: [0.92, 0.78, 0.20, 1.0]
     Metallic: 0.0
     Roughness: 1.0
 
   # VC — deep purple
   VC:
-    Basic Color: [0.23, 0.01, 0.50, 1.0]
+    Base Color: [0.23, 0.01, 0.50, 1.0]
     Metallic: 0.0
     Roughness: 1.0
 
   # M2 — vivid blue
   M2Router:
-    Basic Color: [0.20, 0.44, 0.92, 1.0]
+    Base Color: [0.20, 0.44, 0.92, 1.0]
     Metallic: 0.0
     Roughness: 1.0
 
   # Metal opening — black
   MOpen:
-    Basic Color: [0.00, 0.00, 0.00, 1.0]
+    Base Color: [0.00, 0.00, 0.00, 1.0]
     Metallic: 0.0
     Roughness: 1.0
 
   # Etches — silvery / pale green
   DeepTrench:
-    Basic Color: [0.75, 0.75, 0.75, 1.0]
+    Base Color: [0.75, 0.75, 0.75, 1.0]
     Metallic: 0.0
     Roughness: 1.0
   IsolationTrench:
-    Basic Color: [0.75, 0.75, 0.75, 1.0]
+    Base Color: [0.75, 0.75, 0.75, 1.0]
     Metallic: 0.0
     Roughness: 1.0
   ShelfEtch:
-    Basic Color: [0.75, 0.88, 0.75, 1.0]
+    Base Color: [0.75, 0.88, 0.75, 1.0]
     Metallic: 0.0
     Roughness: 1.0

@@ -197,6 +197,10 @@ def create_material(name, color):
         # Try using Blender's input names
         if key in node_bsdf.inputs:
             node_bsdf.inputs[key].default_value = value
+            if key == "Base Color" and len(value)>3 and not "Alpha" in color:
+                # Copy alpha channel to "Alpha" property if not explicitly set
+                node_bsdf.inputs["Alpha"].default_value = value[3]
+
         elif key == "Subsurface Type":
             # Handle exceptional property
             try:

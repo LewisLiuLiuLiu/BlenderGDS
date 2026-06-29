@@ -7,111 +7,111 @@ description: Fancy color scheme - vivid flat aesthetic
 layers:
   # Active regions - bright green
   Activ:
-    Basic Color: [0.10, 0.95, 0.25, 0.90]
+    Base Color: [0.10, 0.95, 0.25, 0.90]
     Alpha: 0.9
     Metallic: 0.0
     Roughness: 1.0
   ActivFiller:
-    Basic Color: [0.10, 0.95, 0.25, 0.35]
+    Base Color: [0.10, 0.95, 0.25, 0.35]
     Alpha: 0.35
     Metallic: 0.0
     Roughness: 1.0
 
   # Gate poly - vivid red
   GatPoly:
-    Basic Color: [0.95, 0.08, 0.08, 0.95]
+    Base Color: [0.95, 0.08, 0.08, 0.95]
     Alpha: 0.95
     Metallic: 0.0
     Roughness: 1.0
   GatPolyFiller:
-    Basic Color: [0.95, 0.08, 0.08, 0.35]
+    Base Color: [0.95, 0.08, 0.08, 0.35]
     Alpha: 0.35
     Metallic: 0.0
     Roughness: 1.0
 
   # NWell - deep blue
   NWell:
-    Basic Color: [0.10, 0.30, 0.90, 0.65]
+    Base Color: [0.10, 0.30, 0.90, 0.65]
     Alpha: 0.65
     Metallic: 0.0
     Roughness: 1.0
 
   # Contacts - bright white (neutral metal plugs)
   Cont:
-    Basic Color: [1.0, 1.0, 1.0, 1.0]
+    Base Color: [1.0, 1.0, 1.0, 1.0]
     Metallic: 0.0
     Roughness: 1.0
 
   # Metal layers - vivid rainbow spectrum (Blue → Violet → Red → Yellow → Gold)
   Metal1:
-    Basic Color: [0.15, 0.40, 1.0, 1.0]        # Blue
+    Base Color: [0.15, 0.40, 1.0, 1.0]        # Blue
     Metallic: 0.0
     Roughness: 1.0
   Metal1Filler:
-    Basic Color: [0.15, 0.40, 1.0, 0.35]
+    Base Color: [0.15, 0.40, 1.0, 0.35]
     Alpha: 0.35
     Metallic: 0.0
     Roughness: 1.0
 
   # Via - bright white
   Via1:
-    Basic Color: [1.0, 1.0, 1.0, 1.0]
+    Base Color: [1.0, 1.0, 1.0, 1.0]
     Metallic: 0.0
     Roughness: 1.0
 
   Metal2:
-    Basic Color: [0.55, 0.10, 1.0, 1.0]        # Violet (between Blue and Red)
+    Base Color: [0.55, 0.10, 1.0, 1.0]        # Violet (between Blue and Red)
     Metallic: 0.0
     Roughness: 1.0
   Metal2Filler:
-    Basic Color: [0.55, 0.10, 1.0, 0.35]
+    Base Color: [0.55, 0.10, 1.0, 0.35]
     Alpha: 0.35
     Metallic: 0.0
     Roughness: 1.0
 
   Via2:
-    Basic Color: [1.0, 1.0, 1.0, 1.0]
+    Base Color: [1.0, 1.0, 1.0, 1.0]
     Metallic: 0.0
     Roughness: 1.0
 
   Metal3:
-    Basic Color: [1.0, 0.08, 0.08, 1.0]        # Red
+    Base Color: [1.0, 0.08, 0.08, 1.0]        # Red
     Metallic: 0.0
     Roughness: 1.0
   Metal3Filler:
-    Basic Color: [1.0, 0.08, 0.08, 0.35]
+    Base Color: [1.0, 0.08, 0.08, 0.35]
     Alpha: 0.35
     Metallic: 0.0
     Roughness: 1.0
 
   Via3:
-    Basic Color: [1.0, 1.0, 1.0, 1.0]
+    Base Color: [1.0, 1.0, 1.0, 1.0]
     Metallic: 0.0
     Roughness: 1.0
 
   Metal4:
-    Basic Color: [1.0, 0.95, 0.05, 1.0]        # Yellow
+    Base Color: [1.0, 0.95, 0.05, 1.0]        # Yellow
     Metallic: 0.0
     Roughness: 1.0
   Metal4Filler:
-    Basic Color: [1.0, 0.95, 0.05, 0.35]
+    Base Color: [1.0, 0.95, 0.05, 0.35]
     Alpha: 0.35
     Metallic: 0.0
     Roughness: 1.0
 
   # Top via - bright white
   TopVia1:
-    Basic Color: [1.0, 1.0, 1.0, 1.0]
+    Base Color: [1.0, 1.0, 1.0, 1.0]
     Metallic: 0.0
     Roughness: 1.0
 
   # Top metal - gold (bond-pad layer, visually distinct)
   TopMetal1:
-    Basic Color: [1.0, 0.78, 0.10, 1.0]
+    Base Color: [1.0, 0.78, 0.10, 1.0]
     Metallic: 0.0
     Roughness: 1.0
   TopMetal1Filler:
-    Basic Color: [1.0, 0.78, 0.10, 0.35]
+    Base Color: [1.0, 0.78, 0.10, 0.35]
     Alpha: 0.35
     Metallic: 0.0
     Roughness: 1.0
