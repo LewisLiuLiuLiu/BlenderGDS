@@ -198,9 +198,15 @@ def create_material(name, color):
         if key in node_bsdf.inputs:
             node_bsdf.inputs[key].default_value = value
             if key == "Base Color" and len(value)>3 and not "Alpha" in color:
-                # Copy alpha channel to "Alpha" property if not explicitly set
+                # Copy alpha channel of "Base Color" to "Alpha" property if not explicitly set
                 node_bsdf.inputs["Alpha"].default_value = value[3]
 
+        elif key == "Specular Type":
+            # Handle exceptional property
+            try:
+                node_bsdf.distribution = value
+            except:
+                print(f"Unknown Specular Type: {value}")
         elif key == "Subsurface Type":
             # Handle exceptional property
             try:

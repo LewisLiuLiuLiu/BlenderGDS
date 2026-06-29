@@ -52,11 +52,24 @@
         "Alpha":                 {"$ref": "#/definitions/value"},
         "Weight":                {"$ref": "#/definitions/value"},
         "Diffuse Roughness":     {"$ref": "#/definitions/value"},
-        "Subsurface Type":       {"type": "string", "description": "Subsurface scattering method. E.g. 'BURLEY' or 'RANDOM_WALK'."},
+        "Subsurface Type":       {
+          "type": "string",
+          "description": "Subsurface scattering method.",
+          "enum": [
+            "BURLEY", "RANDOM_WALK", "RANDOM_WALK_SKIN"
+          ]
+        },
         "Subsurface Weight":     {"$ref": "#/definitions/value"},
         "Subsurface Scale":      {"$ref": "#/definitions/value"},
         "Subsurface IOR":        {"$ref": "#/definitions/value"},
         "Subsurface Anisotropy": {"$ref": "#/definitions/value"},
+        "Specular Type":         {
+          "$ref": "string",
+          "description": "Specular distribution method.",
+          "enum": [
+            "GGX", "MULTI_GGX"
+          ]
+        },
         "Specular IOR Level":    {"$ref": "#/definitions/value"},
         "Specular Tint":         {"$ref": "#/definitions/rgba"},
         "Anisotropic":           {"$ref": "#/definitions/value"},
