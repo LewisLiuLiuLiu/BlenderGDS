@@ -22,25 +22,21 @@ layers:
   # Silicon nitride (slightly yellow-green, semi-transparent)
   SiN:
     Base Color: [0.55, 0.55, 0.45, 0.85]
-    Alpha: 0.85
     Roughness: 0.35
 
   # Doped silicon regions (faint reddish tint over Si)
   SiNdope:
     Base Color: [0.50, 0.40, 0.42, 0.95]
-    Alpha: 0.95
     Metallic: 0.5
     Roughness: 0.45
   SiNppdope:
     Base Color: [0.60, 0.35, 0.38, 0.95]
-    Alpha: 0.95
     Metallic: 0.5
     Roughness: 0.45
 
   # Oxide opening — translucent window
   OxideOpen:
     Base Color: [0.85, 0.88, 0.95, 0.35]
-    Alpha: 0.35
     Roughness: 0.2
 
   # TiW heater — darker steel
@@ -64,19 +60,15 @@ layers:
   # Passivation opening (dark cavity)
   MOpen:
     Base Color: [0.10, 0.10, 0.10, 0.85]
-    Alpha: 0.85
     Roughness: 0.6
 
   # Etched trenches — dark cavities
   DeepTrench:
     Base Color: [0.05, 0.05, 0.05, 0.95]
-    Alpha: 0.95
     Roughness: 0.7
   IsolationTrench:
     Base Color: [0.10, 0.10, 0.10, 0.90]
-    Alpha: 0.9
     Roughness: 0.65
   ShelfEtch:
     Base Color: [0.25, 0.25, 0.25, 0.80]
-    Alpha: 0.8
     Roughness: 0.55

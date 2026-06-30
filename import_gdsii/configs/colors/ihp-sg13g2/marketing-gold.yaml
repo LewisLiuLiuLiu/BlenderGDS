@@ -8,21 +8,16 @@ layers:
   # Silicon / Devices (enhanced but plausible)
   Activ:
     Base Color: [0.20, 0.80, 0.30, 0.8]
-    Alpha: 0.8
   ActivFiller:
     Base Color: [0.20, 0.80, 0.30, 0.8]
-    Alpha: 0.8
 
   GatPoly:
     Base Color: [1.00, 0.30, 0.30, 0.9]
-    Alpha: 0.9
   GatPolyFiller:
     Base Color: [1.00, 0.30, 0.30, 0.9]
-    Alpha: 0.9
 
   NWell:
     Base Color: [0.30, 0.50, 1.00, 0.8]
-    Alpha: 0.8
 
   # Gold vias (warm, luxurious gradient)
   Cont:
@@ -56,7 +51,6 @@ layers:
     Roughness: 0.3
   Metal1Filler:
     Base Color: [0.49, 0.49, 0.52, 0.65]
-    Alpha: 0.65
     Metallic: 0.8
     Roughness: 0.3
 
@@ -66,7 +60,6 @@ layers:
     Roughness: 0.3
   Metal2Filler:
     Base Color: [0.57, 0.58, 0.61, 0.65]
-    Alpha: 0.65
     Metallic: 0.8
     Roughness: 0.3
 
@@ -76,7 +69,6 @@ layers:
     Roughness: 0.3
   Metal3Filler:
     Base Color: [0.65, 0.66, 0.69, 0.65]
-    Alpha: 0.65
     Metallic: 0.8
     Roughness: 0.3
 
@@ -86,7 +78,6 @@ layers:
     Roughness: 0.3
   Metal4Filler:
     Base Color: [0.73, 0.74, 0.77, 0.65]
-    Alpha: 0.65
     Metallic: 0.8
     Roughness: 0.3
 
@@ -96,7 +87,6 @@ layers:
     Roughness: 0.3
   Metal5Filler:
     Base Color: [0.81, 0.82, 0.85, 0.65]
-    Alpha: 0.65
     Metallic: 0.8
     Roughness: 0.3
 
@@ -107,7 +97,6 @@ layers:
     Roughness: 0.3
   TopMetal1Filler:
     Base Color: [0.87, 0.89, 0.94, 0.70]
-    Alpha: 0.7
     Metallic: 0.8
     Roughness: 0.3
 
@@ -117,6 +106,5 @@ layers:
     Roughness: 0.3
   TopMetal2Filler:
     Base Color: [0.93, 0.95, 0.99, 0.70]
-    Alpha: 0.7
     Metallic: 0.8
     Roughness: 0.3

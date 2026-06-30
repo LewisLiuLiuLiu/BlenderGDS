@@ -8,21 +8,18 @@ layers:
   # Lithium niobate ridge — slightly translucent, faint blue-grey crystalline tint
   LN_RIDGE:
     Base Color: [0.82, 0.84, 0.92, 0.85]
-    Alpha: 0.85
     Metallic: 0.2
     Roughness: 0.25
 
   # LN slab beneath the ridge
   LN_SLAB:
     Base Color: [0.80, 0.82, 0.90, 0.75]
-    Alpha: 0.75
     Metallic: 0.2
     Roughness: 0.30
 
   # Etched-away slab regions — rendered as a dark translucent void
   SLAB_NEGATIVE:
     Base Color: [0.08, 0.08, 0.10, 0.30]
-    Alpha: 0.3
     Roughness: 0.55
 
   # Text labels — dark, matte
@@ -33,13 +30,11 @@ layers:
   # Chip outline — soft peach (matches KLayout default)
   CHIP_CONTOUR:
     Base Color: [1.00, 0.78, 0.72, 0.6]
-    Alpha: 0.6
     Roughness: 0.7
 
   # Exclusion zone — subtle warning green
   CHIP_EXCLUSION_ZONE:
     Base Color: [0.00, 1.00, 0.61, 0.30]
-    Alpha: 0.3
     Roughness: 0.7
 
   # RF / EO drive electrodes — gold (typical for LNOI EO modulators)

@@ -8,31 +8,26 @@ layers:
   # Active regions - bright green
   Activ:
     Base Color: [0.10, 0.95, 0.25, 0.90]
-    Alpha: 0.9
     Metallic: 0.0
     Roughness: 1.0
   ActivFiller:
     Base Color: [0.10, 0.95, 0.25, 0.35]
-    Alpha: 0.35
     Metallic: 0.0
     Roughness: 1.0
 
   # Gate poly - vivid red
   GatPoly:
     Base Color: [0.95, 0.08, 0.08, 0.95]
-    Alpha: 0.95
     Metallic: 0.0
     Roughness: 1.0
   GatPolyFiller:
     Base Color: [0.95, 0.08, 0.08, 0.35]
-    Alpha: 0.35
     Metallic: 0.0
     Roughness: 1.0
 
   # NWell - deep blue
   NWell:
     Base Color: [0.10, 0.30, 0.90, 0.65]
-    Alpha: 0.65
     Metallic: 0.0
     Roughness: 1.0
 
@@ -76,7 +71,6 @@ layers:
     Roughness: 1.0
   Metal1Filler:
     Base Color: [0.15, 0.40, 1.0, 0.35]
-    Alpha: 0.35
     Metallic: 0.0
     Roughness: 1.0
 
@@ -86,7 +80,6 @@ layers:
     Roughness: 1.0
   Metal2Filler:
     Base Color: [0.55, 0.10, 1.0, 0.35]
-    Alpha: 0.35
     Metallic: 0.0
     Roughness: 1.0
 
@@ -96,7 +89,6 @@ layers:
     Roughness: 1.0
   Metal3Filler:
     Base Color: [1.0, 0.08, 0.08, 0.35]
-    Alpha: 0.35
     Metallic: 0.0
     Roughness: 1.0
 
@@ -106,7 +98,6 @@ layers:
     Roughness: 1.0
   Metal4Filler:
     Base Color: [1.0, 0.52, 0.05, 0.35]
-    Alpha: 0.35
     Metallic: 0.0
     Roughness: 1.0
 
@@ -116,7 +107,6 @@ layers:
     Roughness: 1.0
   Metal5Filler:
     Base Color: [1.0, 0.95, 0.05, 0.35]
-    Alpha: 0.35
     Metallic: 0.0
     Roughness: 1.0
 
@@ -127,7 +117,6 @@ layers:
     Roughness: 1.0
   TopMetal1Filler:
     Base Color: [1.0, 0.22, 0.68, 0.35]
-    Alpha: 0.35
     Metallic: 0.0
     Roughness: 1.0
 
@@ -137,6 +126,5 @@ layers:
     Roughness: 1.0
   TopMetal2Filler:
     Base Color: [1.0, 0.78, 0.10, 0.35]
-    Alpha: 0.35
     Metallic: 0.0
     Roughness: 1.0

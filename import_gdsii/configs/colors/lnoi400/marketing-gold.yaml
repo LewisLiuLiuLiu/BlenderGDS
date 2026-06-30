@@ -14,14 +14,12 @@ layers:
   # LN slab — deeper companion shade
   LN_SLAB:
     Base Color: [0.52, 0.44, 0.66, 0.90]
-    Alpha: 0.9
     Metallic: 0.3
     Roughness: 0.35
 
   # Etched slab — deep cool void for contrast
   SLAB_NEGATIVE:
     Base Color: [0.08, 0.08, 0.12, 0.55]
-    Alpha: 0.55
     Roughness: 0.55
 
   # Labels — warm muted brown
@@ -32,13 +30,11 @@ layers:
   # Chip outline — warm gold tint
   CHIP_CONTOUR:
     Base Color: [0.96, 0.78, 0.45, 0.7]
-    Alpha: 0.7
     Roughness: 0.6
 
   # Exclusion zone — soft amber
   CHIP_EXCLUSION_ZONE:
     Base Color: [0.92, 0.72, 0.32, 0.35]
-    Alpha: 0.35
     Roughness: 0.6
 
   # Electrodes — luxurious gold

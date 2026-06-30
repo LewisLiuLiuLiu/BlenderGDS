@@ -7,21 +7,16 @@ description: Realistic color scheme
 layers:
   Activ:
     Base Color: [0.35, 0.45, 0.25, 0.85]
-    Alpha: 0.85
   ActivFiller:
     Base Color: [0.35, 0.45, 0.25, 0.85]
-    Alpha: 0.85
 
   GatPoly:
     Base Color: [0.18, 0.18, 0.16, 0.95]
-    Alpha: 0.95
   GatPolyFiller:
     Base Color: [0.18, 0.18, 0.16, 0.95]
-    Alpha: 0.95
 
   NWell:
     Base Color: [0.30, 0.45, 0.55, 0.65]
-    Alpha: 0.65
 
   # Tungsten contacts & vias (dark, slightly bluish steel)
   Cont:

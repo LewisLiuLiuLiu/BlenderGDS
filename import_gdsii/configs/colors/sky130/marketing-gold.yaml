@@ -8,13 +8,10 @@ layers:
   # Silicon layers (vibrant)
   nwell:
     Base Color: [0.30, 0.50, 1.00, 0.8]
-    Alpha: 0.8
   diff:
     Base Color: [0.20, 0.80, 0.30, 0.8]
-    Alpha: 0.8
   poly:
     Base Color: [1.00, 0.30, 0.30, 0.9]
-    Alpha: 0.9
 
   # Local interconnect (bronze/copper tone)
   li1:

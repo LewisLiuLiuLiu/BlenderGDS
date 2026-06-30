@@ -8,21 +8,16 @@ layers:
   # Silicon / Devices (enhanced but plausible)
   Activ:
     Base Color: [0.40, 0.55, 0.30, 0.90]
-    Alpha: 0.9
   ActivFiller:
     Base Color: [0.40, 0.55, 0.30, 0.55]
-    Alpha: 0.55
 
   GatPoly:
     Base Color: [0.22, 0.22, 0.20, 0.95]
-    Alpha: 0.95
   GatPolyFiller:
     Base Color: [0.22, 0.22, 0.20, 0.60]
-    Alpha: 0.6
 
   NWell:
     Base Color: [0.35, 0.55, 0.65, 0.55]
-    Alpha: 0.55
 
   # Tungsten (dark contrast backbone)
   Cont:
@@ -56,7 +51,6 @@ layers:
     Roughness: 0.3
   Metal1Filler:
     Base Color: [0.61, 0.62, 0.64, 0.65]
-    Alpha: 0.65
     Metallic: 0.8
     Roughness: 0.3
 
@@ -66,7 +60,6 @@ layers:
     Roughness: 0.3
   Metal2Filler:
     Base Color: [0.67, 0.68, 0.70, 0.65]
-    Alpha: 0.65
     Metallic: 0.8
     Roughness: 0.3
 
@@ -76,7 +69,6 @@ layers:
     Roughness: 0.3
   Metal3Filler:
     Base Color: [0.73, 0.74, 0.76, 0.65]
-    Alpha: 0.65
     Metallic: 0.8
     Roughness: 0.3
 
@@ -86,7 +78,6 @@ layers:
     Roughness: 0.3
   Metal4Filler:
     Base Color: [0.79, 0.80, 0.82, 0.65]
-    Alpha: 0.65
     Metallic: 0.8
     Roughness: 0.3
 
@@ -96,7 +87,6 @@ layers:
     Roughness: 0.3
   Metal5Filler:
     Base Color: [0.84, 0.85, 0.87, 0.65]
-    Alpha: 0.65
     Metallic: 0.8
     Roughness: 0.3
 
@@ -107,7 +97,6 @@ layers:
     Roughness: 0.3
   TopMetal1Filler:
     Base Color: [0.89, 0.90, 0.92, 0.70]
-    Alpha: 0.7
     Metallic: 0.8
     Roughness: 0.3
 
@@ -117,6 +106,5 @@ layers:
     Roughness: 0.3
   TopMetal2Filler:
     Base Color: [0.93, 0.94, 0.96, 0.70]
-    Alpha: 0.7
     Metallic: 0.8
     Roughness: 0.3

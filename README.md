@@ -157,7 +157,6 @@ layers:
 
   NWell:
     Base Color: [0.30, 0.45, 0.55, 0.65]
-    Alpha: 0.65
 ```
 
 Each layer entry supports any of the Principled BSDF fields:
